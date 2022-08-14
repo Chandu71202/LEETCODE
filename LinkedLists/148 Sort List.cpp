@@ -78,4 +78,29 @@ public:
         }
         return fh;
     }
+  
+  //TLE
+    
+    // ListNode* sortList(ListNode* head) 
+    // {
+    //     if(head==NULL)
+    //         return head;
+    //     ListNode* curr=head;
+    //     while(curr!=NULL)
+    //     {
+    //         ListNode* iter=curr;
+    //         ListNode* minNode=iter;
+    //         while(iter!=NULL)
+    //         {
+    //             if(iter->val<minNode->val)
+    //                 minNode=iter;
+    //             iter=iter->next;
+    //         }
+    //         int temp=curr->val;
+    //         curr->val=minNode->val;
+    //         minNode->val=temp;
+    //         curr=curr->next;
+    //     }
+    //     return head;
+    // }
 };
