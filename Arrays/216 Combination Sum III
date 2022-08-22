@@ -1,0 +1,17 @@
+from itertools import combinations
+class Solution:
+    def combinationSum3(self, k: int, n: int) -> List[List[int]]:
+        nums=[i for i in range(1,10)]
+        dp=[[] for i in range(n+1)]
+        dp[0]=[[]]
+        for j in nums:
+            for i in range(j,n+1):
+                for q in dp[i-j]:
+                    if(j not in q):
+                        dp[i].append(q+[j])
+        l=[]
+        for i in dp[-1]:
+            if len(i)==k:
+                l.append(i)
+        return l
+                    
