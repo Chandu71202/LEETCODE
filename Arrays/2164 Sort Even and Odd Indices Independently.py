@@ -1,5 +1,6 @@
 class Solution:
     def sortEvenOdd(self, nums: List[int]) -> List[int]:
+        #110 ms
         l1=[]
         l2=[]
         for i in range(len(nums)):
@@ -16,3 +17,7 @@ class Solution:
         l+=l1
         l+=l2
         return l
+        
+        # 114 ms
+        # nums[::2], nums[1::2] = sorted(nums[::2]), sorted(nums[1::2], reverse=True)
+        # return nums
