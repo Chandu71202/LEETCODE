@@ -10,3 +10,12 @@ class Solution:
                 
             result += min(diff, 26 - diff)
         return result + len(word)
+    
+#         ans = (ord('a') - ord(word[0])) % 26
+#         ans = min(ans, 26 - ans)
+        
+#         for i in range(1, len(word)):
+#             diff = (ord(word[i]) - ord(word[i-1])) % 26
+#             ans += min(diff, 26 - diff)
+            
+#         return ans + len(word)
